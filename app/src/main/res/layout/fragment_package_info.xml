@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="Recommended Package" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:onClick="selectRecommend"
+                android:text="Select" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:onClick="loadRecommend"
+                android:text="Load" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="137dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom" />
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:clickable="false">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:includeFontPadding="true"
+                        android:onClick="loadMeals"
+                        android:text="Maharashtrian"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom|right"
+                        android:onClick="loadMeals"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|top"
+                        android:onClick="loadMeals"
+                        android:text="Veg"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center|right"
+                        android:onClick="loadMeals"
+                        android:text="Jain"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/maharashtrana" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/chinesesa" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="loadMeals"
+                        android:text="Chinese"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button12"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|top"
+                        android:onClick="loadMeals"
+                        android:text="Veg"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button13"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center|right"
+                        android:onClick="loadMeals"
+                        android:text="Jain"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom|right"
+                        android:onClick="loadMeals"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="loadMeals"
+                        android:text="Lebanese"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|top"
+                        android:onClick="loadMeals"
+                        android:text="Veg"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center|right"
+                        android:onClick="loadMeals"
+                        android:text="Jain"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button17"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom|right"
+                        android:onClick="loadMeals"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lebanesea" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="loadMeals"
+                        android:text="Thai"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button18"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|top"
+                        android:onClick="loadMeals"
+                        android:text="Veg"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button19"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center|right"
+                        android:onClick="loadMeals"
+                        android:text="Jain"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button20"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom|right"
+                        android:onClick="loadMeals"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/thaia" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="loadMeals"
+                        android:text="Western"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button21"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|top"
+                        android:onClick="loadMeals"
+                        android:text="Veg"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button22"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center|right"
+                        android:onClick="loadMeals"
+                        android:text="Jain"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button23"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom|right"
+                        android:onClick="loadMeals"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/westerna" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:clickable="false">
+
+                    <TextView
+                        android:id="@+id/textViewPunjabi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:includeFontPadding="true"
+                        android:onClick="loadMeals"
+                        android:text="Punjabi"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button24"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|top"
+                        android:onClick="loadMeals"
+                        android:text="Veg"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button25"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center|right"
+                        android:onClick="loadMeals"
+                        android:text="Jain"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button26"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom|right"
+                        android:onClick="loadMeals"
+                        android:text="Vegan"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/punjabia" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

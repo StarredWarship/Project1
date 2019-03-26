@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Personal Details"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:id="@+id/number"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Age"
+                android:inputType="number"
+                android:id="@+id/age"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Address"
+                android:id="@+id/address"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Height (cms)"
+                android:inputType="number"
+                android:id="@+id/height"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Weight (kgs)"
+                android:inputType="number"
+                android:id="@+id/weight"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Food Preferences"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="30mm"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Non - Vegetarian"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Vegetarian" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Egg - Eater" />
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Vegan" />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="30mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Seafood" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Allergies"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Milk" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Eggs" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Peanuts" />
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Soy" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Wheat" />
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fish" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Corn" />
+                <CheckBox
+                    android:id="@+id/checkBox13"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Gelatin" />
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="30mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Other" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Preferred Cuisines"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox15"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Chinese" />
+                <CheckBox
+                    android:id="@+id/checkBox16"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thai" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox17"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Maharashtrian" />
+                <CheckBox
+                    android:id="@+id/checkBox18"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Punjabi" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox19"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Lebanese" />
+                <CheckBox
+                    android:id="@+id/checkBox20"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Western" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Taste Preferences "
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Spicy" />
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Medium - Spicy"/>
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bland"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Locality"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:text="Hinjewadi"/>
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:text="Kharadi"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:text="Koregaon Park"/>
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:text="NIBM / Kondhwa"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:text="Kothrud" />
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="30mm"
+                    android:layout_height="wrap_content"
+                    android:text="Hadapsar"/>
+            </LinearLayout>
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="30mm"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10mm"
+                android:layout_marginBottom="7mm"
+                android:text="SUBMIT"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
